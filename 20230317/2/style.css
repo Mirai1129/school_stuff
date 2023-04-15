@@ -1,0 +1,21 @@
+th,
+tr,
+table {
+    text-align: center;
+}
+
+tbody {
+    font-weight: bolder;
+}
+
+th,
+td {
+    border-style: dotted;
+    border-color: red;
+}
+
+#apple-rate,
+#orange-rate,
+#strawberry-rate {
+    font-size: 30px;
+}

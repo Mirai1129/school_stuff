@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜數字</title>
+</head>
+
+<body>
+    <h1>猜數字遊戲</h1>
+    <p>請猜一個 1 到 100 的整數。</p>
+    <p>最大值：<span id="max"></span></p>
+    <p>最小值：<span id="min"></span></p>
+    <script>
+        const secretNumber = Math.floor(Math.random() * 50) + 1;
+        let guess;
+        let max = 50;
+        let min = 1;
+        let guessCount = 0;
+
+        while (guess !== secretNumber) {
+            guess = Number(prompt(`請猜一個 ${min} 到 ${max} 的整數`));
+            if (isNaN(guess)) {
+                alert('請輸入數字！');
+                continue;
+            }
+            if (guess < min || guess > max) {
+                alert(`請輸入 ${min} 到 ${max} 的整數！`);
+                continue;
+            }
+            if (guess < secretNumber) {
+                min = guess;
+                guessCount++;
+                alert('太小了！請再猜一次。');
+            } else if (guess > secretNumber) {
+                max = guess;
+                guessCount++;
+                alert('太大了！請再猜一次。');
+            }
+        }
+        alert(`恭喜你猜對了！數字是 ${secretNumber}。總共猜了 ${guessCount} 次`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匯率控制表</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>
+        <center>匯率控制表</center>
+    </h1>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>物品</th>
+                <th>原價</th>
+                <th>換算匯率</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td><span id="apple-price">
+                        <script>document.getElementById("apple-price").innerHTML = Apple;</script>
+                    </span></td>
+                <td><span id="apple-rate">
+                        <script>
+                            exchangeRateApple(Input);
+                        </script>
+                    </span></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td><span id="orange-price">
+                        <script>document.getElementById("orange-price").innerHTML = Orange;</script>
+                    </span></td>
+                <td><span id="orange-rate">
+                        <script>
+                            exchangeRateOrange(Input);
+                        </script>
+                    </span></td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td><span id="strawberry-price">
+                        <script>document.getElementById("strawberry-price").innerHTML = Strawberry;</script>
+                    </span></td>
+                <td><span id="strawberry-rate">
+                        <script>
+                            exchangeRateStrawberry(Input);
+                        </script>
+                    </span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

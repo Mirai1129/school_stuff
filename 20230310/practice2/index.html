@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script>
+        const score = prompt("請輸入成績:", "");
+        switch (true) {
+            case (0 <= score && score <= 59):
+                document.write("<span class='fifty'>不及格，請再加強!</span>");
+                break;
+            case (60 <= score && score <= 69):
+                document.write("<span class='sixty'>及格，但有進步空間!</span>");
+                break;
+            case (70 <= score && score <= 79):
+                document.write("<span class='seventy'>及格，程度達到標準!</span>");
+                break;
+            case (80 <= score && score <= 89):
+                document.write("<span class='eighty'>及格，接近完美!</span>");
+                break;
+            case (90 <= score && score <= 100):
+                document.write("<span class='ninety'>及格，超強，好好保持!</span>");
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>
