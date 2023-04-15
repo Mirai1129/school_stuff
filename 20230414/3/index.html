@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype物件的繼承練習</title>
+</head>
+
+<body>
+    <h1>Prototype物件的繼承練習</h1>
+    <hr />
+    <form id="informationForm">
+        X座標：<input type="text" id="pointX" class="myText" /><br />
+        Y座標：<input type="text" id="pointY" class="myText" /><br />
+        高度：<input type="text" id="height" class="myText" /><br />
+        寬度：<input type="text" id="weight" class="myText" /><br />
+        背景顏色：<input type="text" id="backgroundColor" class="myText" /><br />
+        框線顏色：<input type="text" id="borderColor" class="myText" /><br />
+        <button type="submit">送出</button>
+    </form>
+
+    <div class="informationContainer"></div>
+
+    <script>
+        (() => {
+            function inherit(child, parent) {
+                let prototype = Object.create(parent.prototype);
+
+                prototype.constructor = child;
+
+                child.prototype = prototype;
+            }
+
+            function Position(pointX, pointY, bgColor, borderColor) {
+                this.pointX = pointX;
+                this.pointY = pointY;
+                this.bgColor = bgColor;
+                this.borderColor = borderColor;
+            }
+
+            function Square(pointX, pointY, height, weight, bgColor, borderColor) {
+                Position.call(this, pointX, pointY, bgColor, borderColor);
+                this.weight = weight;
+                this.height = height;
+                this.area = height * weight;
+            }
+
+            inherit(Square, Position);
+
+            Square.prototype.outInformationContent = function () {
+                return `
+          X座標：${this.pointX}<br>
+          Y座標：${this.pointY}<br>
+          背景顏色：${this.bgColor}<br>
+          框線顏色：${this.borderColor}<br>
+          寬度：${this.weight}<br>
+          高度：${this.height}<br>
+          面積：${this.area}<br>
+          `;
+            };
+
+            const form = document.getElementById("informationForm");
+            const container = document.querySelector(".informationContainer");
+
+            const pointX = document.getElementById("pointX");
+            const pointY = document.getElementById("pointY");
+            const height = document.getElementById("height");
+            const weight = document.getElementById("weight");
+            const borderColor = document.getElementById("borderColor");
+            const backgroundColor = document.getElementById("backgroundColor");
+
+            function handleSend(e) {
+                e.preventDefault();
+                const square = new Square(
+                    pointX.value,
+                    pointY.value,
+                    height.value,
+                    weight.value,
+                    backgroundColor.value,
+                    borderColor.value
+                );
+                console.log(container);
+
+                container.innerHTML += `
+            <p>
+              ${square.outInformationContent()}
+            </p>
+          `;
+            }
+
+            form.addEventListener("submit", handleSend);
+        })();
+    </script>
+</body>
+
+</html>
