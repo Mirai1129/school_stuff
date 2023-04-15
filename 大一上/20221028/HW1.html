@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        table
+        {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        th,
+        td {
+            border: 1.5px solid black;
+        }
+        caption {
+            font-family: '微軟中黑體';
+            font-size: 36px;
+            text-decoration: underline;
+        }
+
+        thead {
+            font-family: Arial;
+            font-size: 36px;
+        }
+
+        tbody {
+            font-family: Centaur;
+            font-size: 24px;
+        }
+
+        tfoot {
+            font-family: Centaur;
+            font-size: 12px;
+            color: red;
+            font-style: italic;
+        }
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .td1{
+            font-size: 36px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>個人基本資料</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th class="red">1</th>
+                <th class="green">2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="red">
+                <td class="td1">A</td>
+                <td>A1</td>
+                <td>A2</td>
+            </tr>
+            <tr class="green">
+                <td class="td1">B</td>
+                <td>B1</td>
+                <td>B2</td>
+            </tr>
+            <tr class="blue">
+                <td class="td1">C</td>
+                <td>C1</td>
+                <td>C2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer1</td>
+                <td>footer2</td>
+                <td>footer3</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+
+        sup {
+            color: blue
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            align-content: center;
+
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        td {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        th {
+            font-size: 120%;
+
+        }
+
+        caption {
+            font-size: 120%;
+            font-weight: bolder;
+            color: red;
+            text-decoration: underline;
+        }
+
+        #maintd {
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <title>Pratice-Create Table Part II</title>
+    <table>
+        <caption>
+            <h1>Pokemon introduction</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>Pokemon Name</th>
+                <th>Type</th>
+                <th>Species</th>
+                <th>Abilities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="maintd">Jigglypuff</td>
+                <td>Fairy</td>
+                <td>Balloon Pokémon</td>
+                <td>
+                    <ul>
+                        <li>Cute Charm</li>
+                        <li>Competitive</li>
+                        <li>Friend Guard<sup>(DW)</sup></li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="maintd">Meowth</td>
+                <td>Normal</td>
+                <td>Scratch Cat Pokémon</td>
+                <td>
+                    <ul>
+                        <li>Pickup</li>
+                        <li>Technician</li>
+                        <li>Unnerve <sup>(DW)</sup></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="maintd">Psyduck</td>
+                <td>Water</td>
+                <td>Scratch Cat Pokémon</td>
+                <td>
+                    <ul>
+                        <li>Damp</li>
+                        <li>Cloud Nine</li>
+                        <li>Swift Swim <sup>(DW)</sup></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="maintd">Squirtle</td>
+                <td>Water</td>
+                <td>
+                    Tiny Turtle Pokémon
+                </td>
+                <td>
+                    <ul>
+                        <li>Torrent</li>
+                        <li>Rain Dish <sup>(DW)</sup></li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

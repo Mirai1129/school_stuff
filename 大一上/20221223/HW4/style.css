@@ -1,0 +1,108 @@
+h1 {
+    font-family: Lato;
+    color: blue;
+    text-transform: uppercase;
+    word-spacing: 1em;
+    margin-bottom: 3em;
+}
+
+h2 {
+    font-family: Poppins;
+    color: green;
+    word-spacing: 1em;
+    text-align: left;
+    border-bottom: 2px dashed;
+}
+
+body {
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+    padding: 0px 3em 2em 3em;
+}
+
+ul {
+    height: 50px;
+    padding: 0px 0px 0px 0px;
+}
+
+li {
+    border-bottom: 2px dashed gray;
+}
+
+a:link {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+#sec1 {
+    border: 5px dotted purple;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 5em;
+}
+
+#sec1:hover {
+    background: lavenderblush;
+    box-shadow: 10px 10px palevioletred;
+}
+
+#sec2 {
+    border: 5px dotted goldenrod;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 5em;
+}
+
+#sec2:hover {
+    background: lavenderblush;
+    box-shadow: 10px 10px lightcoral;
+}
+
+#sec3 {
+    border: 5px dotted cornflowerblue;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 5em;
+}
+
+#sec3:hover {
+    background: lavenderblush;
+    box-shadow: 10px 10px lightblue;
+}
+
+#sec4 {
+    border: 5px dotted cornflowerblue;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 5em;
+}
+
+#sec4:hover {
+    background: lavenderblush;
+    box-shadow: 10px 10px lightblue;
+}
+
+#list1>li {
+    display: inline-block;
+    margin-right: 10px;
+}

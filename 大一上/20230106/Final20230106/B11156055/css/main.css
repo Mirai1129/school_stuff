@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+    font-family: "Sawarabi Mincho", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 90%;
+    margin: 0px auto;
+}
+
+/* Style the header */
+
+div.detailinfo {
+    font-size: medium;
+}
+
+header {
+    padding: 30px;
+    font-size: xx-large;
+    text-align: center;
+    background-image: linear-gradient(to top, blue, orange, green);
+}
+
+header>.title {
+    color: yellow;
+}
+
+header>.description {
+    color: white;
+    font-size: x-large;
+    line-height: 200%;
+}
+
+body>.shadow {
+    box-shadow: 12px 12px 7px 0px orange;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    color: white;
+
+}
+
+footer>a:link {
+    color: white;
+}
+
+footer>p {
+    height: 50px;
+}
+
+h1 {
+    color: darkviolet;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+section>p::first-letter {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+td {
+    padding: 10px;
+}
+
+table {
+    border: 0 0 0;
+}
+
+table img {
+    width: 80%;
+    border: 2px;
+    justify-content: center;
+    border: purple 2px solid;
+}
+
+thead {
+    color: blue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav {
+    width: 25%;
+    line-height: 300%;
+    letter-spacing: 3px;
+    padding: 20px;
+    float: right;
+}
+
+nav img {
+    width: 70%;
+    border: 2px;
+}
+
+/* Style the nav*/
+
+nav a {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+/* Style the article */
+
+article {
+    padding: 20px;
+    width: 75%;
+    background-color: #f1f1f1;
+    line-height: 180%;
+    letter-spacing: 3px;
+}
+
+/* Clear floats after the columns */
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wucian {
+    color: green;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.miduo {
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tanji {
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.jushe {
+    color: goldenrod;
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav1 {
+    color: darkblue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.a1:link {
+    color: darkblue;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.tname {
+    background-color: rgb(236, 229, 176);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: x-large;
+    color: chocolate;
+}
+
+.ty {
+    background-color: rgb(236, 229, 176);
+}
+
+.tb {
+    background-color: rgb(132, 200, 255)
+}
+
+.purple {
+    color: rgb(168, 89, 241);
+}

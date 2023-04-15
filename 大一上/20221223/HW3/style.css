@@ -1,0 +1,62 @@
+h1 {
+    font-family: Lato;
+    color: blue;
+    word-spacing: 1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Poppins;
+    color: green;
+    word-spacing: 1em;
+    text-align: left;
+    border-bottom: 2px dashed;
+}
+
+body {
+    font-family: Merriweather;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+    padding: 0px 3em 2em 3em;
+}
+
+#sec1 {
+    border: 5px dotted purple;
+    border-top: 5px dotted purple;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2em;
+}
+
+#sec2 {
+    border: 5px dotted goldenrod;
+    border-top: 5px dotted goldenrod;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2em;
+}
+
+#sec3 {
+    border: 5px dotted cornflowerblue;
+    border-top: 5px dotted cornflowerblue;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2em;
+}
+
+#sec4 {
+    border: 5px dotted cornflowerblue;
+    border-top: 5px dotted cornflowerblue;
+    border-radius: 0px 0px 20px 20px;
+    height: 200px;
+    overflow: hidden;
+    margin: 2em;
+}

@@ -1,0 +1,25 @@
+ body
+        {font-family: 'Courier New', Courier, monospace,'微軟正黑體';
+        font-size:16px;
+        }
+        head,article{margin-bottom: 10%}
+        /* section{margin-bottom: 50px} */
+        h1{  font-size:26px;
+            letter-spacing: 30px;
+        text-align:center;}
+        h2{color:green;
+            font-size:18px;
+            letter-spacing: 10px;
+            text-decoration: underline}
+        .women{color:red}
+        .man{color:blue}
+        article{line-height: 150%}
+        dt{font-size: 18px}
+        #sec1{background-color:lightgoldenrodyellow}
+        #sec2{background-color:rgb(250, 241, 245)}
+        #sec3{background-color:rgb(241, 248, 231)}
+        dt{color:blue;}
+        dd{color:darkslateblue;font-style:italic;font-family: 'Courier New', Courier, monospace,"標楷體"}
+        .question{font-size: 16px;font-weight: bolder;background-color: yellow}
+        .answer{font-size: 12px;color:rgb(97, 37, 2)}
+        .canswer{font-size: 14px;color: red;}

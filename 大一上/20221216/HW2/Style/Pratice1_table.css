@@ -1,0 +1,67 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+thead {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px black;
+}
+
+tfoot {
+    background-color: palegoldenrod;
+    font-style: italic;
+}
+
+sup {
+    color: gray;
+    font-size: 0.5em;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    display: block;
+}
+
+.Japanese {
+    font-family: 'Sawarabi Mincho', serif;
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Chinese {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: purple;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Big_Title {
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+.Pokemon_Name {
+    text-align: center;
+}
+
+.Abilities {
+    line-height: 1.5em;
+}

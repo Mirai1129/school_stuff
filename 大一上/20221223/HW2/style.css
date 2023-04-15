@@ -1,0 +1,63 @@
+header {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+    color: blue;
+    text-transform: uppercase;
+    word-spacing: 1em;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+
+p {
+    text-indent: 2em;
+    height: 200px;
+    min-width: 10%;
+    max-width: 25%;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    color: green;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+h2 ::first-letter {
+    text-transform: capitalize;
+}
+
+#div1 {
+    border: 5px solid pink;
+    border-top: dotted;
+    border-radius: 0 0 20px 20px;
+    border-color: pink;
+    border-width: 5px;
+}
+
+#div2 {
+    border: 5px solid orange;
+    border-top: dotted;
+    border-radius: 0 0 20px 20px;
+    border-color: orange;
+    border-width: 5px;
+}
+
+#div3 {
+    border: 5px solid blue;
+    border-top: dotted;
+    border-radius: 0 0 20px 20px;
+    border-color: blue;
+    border-width: 5px;
+}
+
+#div4 {
+    border: 5px solid blue;
+    border-top: dotted;
+    border-radius: 0 0 20px 20px;
+    border-color: blue;
+    border-width: 5px;
+}

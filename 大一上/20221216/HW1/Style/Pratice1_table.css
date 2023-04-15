@@ -1,0 +1,50 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+thead {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+}
+
+tfoot {
+    background-color: palegoldenrod;
+}
+
+sup {
+    color: gray;
+    font-size: 0.5em;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+.Japanese {
+    font-family: 'Sawarabi Mincho', serif;
+    color: green;
+    font-size: 1.2em;
+}
+
+.Chinese {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: purple;
+}
+
+.Big_Title {
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+}

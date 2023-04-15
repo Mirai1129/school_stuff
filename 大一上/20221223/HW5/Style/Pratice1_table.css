@@ -1,0 +1,128 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 24px 24px 24px lightblue;
+    border-color: lightblue;
+    border-style: double;
+    border-width: 5px;
+    padding: 0.5em 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 1px solid lightblue;
+    border-color: lightblue;
+}
+
+thead {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0px black;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: lightblue;
+}
+
+tbody {
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: lightblue;
+}
+
+tr {
+
+    border-width: 5px;
+    border-color: lightblue;
+    border-top: dotted lightblue;
+    border-bottom: dotted lightblue;
+}
+
+tfoot {
+    background-color: palegoldenrod;
+    font-style: italic;
+}
+
+sup {
+    color: gray;
+    font-size: 0.5em;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    margin: auto;
+    display: block;
+}
+
+a:link,
+a:visited {
+    color: green;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: green;
+    color: white;
+    font-size: 150%;
+}
+
+a:active {
+    background-color: yellow;
+    color: red;
+}
+
+ul {
+    list-style-image: url('../img/pokeball.png');
+}
+
+.Japanese {
+    font-family: 'Sawarabi Mincho', serif;
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Chinese {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: purple;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.Big_Title {
+    font-family: 'Oswald', sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+.Big_Title:hover {
+    background-color: yellow;
+    color: green;
+    text-transform: lowercase;
+}
+
+.Pokemon_Name {
+    text-align: center;
+}
+
+.Pokemon_Name:hover {
+    color: red;
+}
+
+.Abilities {
+    line-height: 1.5em;
+}
+
+.Description::first-letter {
+    font-size: 200%;
+    color: red;
+}

@@ -1,0 +1,31 @@
+header {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+    color: blue;
+    text-transform: uppercase;
+    word-spacing: 1em;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+
+p {
+    text-indent: 2em;
+    height: 200px;
+    min-width: 10%;
+    max-width: 25%;
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    color: green;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+h2 ::first-letter{
+    text-transform:capitalize;
+}
