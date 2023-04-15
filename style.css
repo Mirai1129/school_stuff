@@ -55,7 +55,7 @@ thead th {
     top: 0;
 }
 
-#current-date {
+.current-date {
     color: #333;
     font-family: 'Helvetica', sans-serif;
     text-align: center;
