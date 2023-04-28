@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>取得標籤屬性</title>
+    <script>
+        function getAlignments() {
+            const tagP = document.querySelectorAll("p");
+            let alignmentString = "";
+            for (let i = 0; i < tagP.length; i++) {
+                alignmentString += `第${i + 1}行：${tagP.item(i).align}\n`;
+            }
+            return alignmentString;
+        }
+
+        function Information() {
+            const alignmentString = getAlignments();
+            alert(alignmentString);
+        }
+    </script>
+</head>
+
+<body>
+    <p align="left">我是第一行(靠左對齊)：</p>
+    <p align="right">我是第二行(靠右對齊)：</p>
+    <p align="center">我是第三行(置中對齊)：</p>
+    <button onclick="Information()">對齊屬性</button>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>新增項目</title>
+    <style type="text/css">
+        ol[type='A'] {
+            color: blue;
+            font-size: 32px;
+        }
+
+        ol[type='1'] {
+            color: green;
+            font-size: 24px;
+        }
+
+        .newItems {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ol type="A">
+            <li>英雄聯盟成員：</li>
+            <ol type="1" id="DC-list">
+                <li>雷神索爾</li>
+                <li>浩克</li>
+            </ol>
+            <li>迪士尼的卡通人物：</li>
+            <ol type="1" id="Disney-list">
+                <li>米奇</li>
+                <li>雪寶</li>
+            </ol>
+        </ol>
+    </div>
+    <div>
+        <input type="text" id="item-input">
+        <button onclick="handleClick('addDc')">英雄聯盟</button>
+        <button onclick="handleClick('addDisney')">迪士尼</button>
+        <button onclick="handleClick('delete')">刪除輸入框</button>
+        <button onclick="handleClick('delete-DC')">刪除英雄聯盟</button>
+        <button onclick="handleClick('delete-Disney')">刪除迪士尼</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
