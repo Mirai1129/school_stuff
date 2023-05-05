@@ -1,0 +1,322 @@
+/* 全域 */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    width: 100%;
+    line-height: 80px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+
+img {
+    /*文章圖片*/
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fas.fa-user-circle {
+    font-size: 5%;
+    vertical-align: middle;
+}
+
+.fas.fa-bars {
+    display: inline-block;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #04404b;
+}
+
+
+.headerNav {
+    background-color: #eae0d0;
+    height: 80px;
+    position: relative;
+}
+
+.headerNavShow {
+    background-color: #eae0d0;
+    height: 80px;
+    position: relative;
+}
+
+.logo::after,
+.userAccount::after,
+.headerNav::after {
+    content: '';
+    clear: both;
+}
+
+#mobileMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mobileMenuBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.logo,
+.userAccount {
+    width: 250px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+}
+
+.userAccount {
+    display: none;
+}
+
+.logo::after,
+.userAccount::after {
+    content: '';
+    clear: both;
+}
+
+.mainNav {
+    width: 100%;
+    height: 100vh;
+    background: #cebba2;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    transition: .5s ease-in-out;
+}
+
+.mainNavShow {
+    width: 100%;
+    height: 100vh;
+    background: #cebba2;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+.mainNav .navItem {
+    text-align: center;
+    border-bottom: 2px dashed gray;
+}
+
+.mainNav .navItem:first-child {
+    background-color: #774b0d;
+}
+
+.mainNav .navItem:nth-child(2) {
+    background-color: #144210;
+}
+
+.mainNav .navItem:first-child a,
+.mainNav .navItem:nth-child(2) a {
+    color: #fff;
+}
+
+#mobileMenu:checked~.headerNav .mainNav {
+    left: 0;
+}
+
+.exercise {
+    position: relative;
+}
+
+.exercise:hover {
+    background-color: #e4c58d;
+}
+
+.exercise:hover .exerciseList {
+    display: block;
+}
+
+.exerciseList {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    background-color: #e4c58d;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.exerciseList .exerciseForList {
+    border: 2px dashed gray;
+    background-color: #c08d76;
+    margin-top: -2px;
+}
+
+.exerciseList .exerciseForList:hover {
+    background-color: #a09380;
+}
+
+
+
+/* XX-Large Device */
+@media(min-width: 1024px) {
+    #mobileMenu {
+        visibility: hidden
+    }
+
+    .mainNav {
+        background: #eae0d0;
+        width: 70%;
+        height: 80px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: right;
+        font-size: 0;
+        /*     
+            問題：擋住userAccount
+            display: flex;
+            justify-content: flex-end; 
+        */
+    }
+
+    .mainNav .navItem {
+        display: inline-block;
+        width: 120px;
+        border-bottom: none;
+
+    }
+
+    .exerciseList .exerciseForList {
+        border: none;
+        background-color: #bdb4a7;
+        margin-top: 0px;
+    }
+
+    .exerciseList {
+        width: 120px;
+        padding: 0;
+        background-color: #bdb4a7;
+    }
+
+    .exerciseList .exerciseForList {
+        border-top: 2px dashed gray;
+    }
+
+    .userAccount {
+        display: block;
+        float: right;
+        border-left: 2px dashed gray;
+    }
+
+    .mobileMenuBtn {
+        display: none;
+        float: right;
+
+    }
+
+
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    /* img {
+    max-width: 100%;
+    height: auto;
+    
+} */
+
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+
+    .wrap li {
+        flex: 0 0 25%;
+        /* 每行最多容納4個項目 */
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+}
+
+.wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.wrap ul {
+    display: flex;
+    /* 使用彈性盒子模型 */
+    flex-wrap: wrap;
+    /* 允許多行 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+a:hover {
+    color: #5f2e2e;
+    background-color: skyblue;
+}
+
+.exerciseList .exerciseForList:hover {
+    background-color: #a09380;
+}
+
+@media (min-width: 570px) and (max-width: 1023px) {
+    .wrap li {
+        flex-basis: 50%;
+    }
+
+    img {
+        /*文章圖片*/
+        width: 50%;
+        vertical-align: middle;
+    }
+
+    p {
+        color: #1892e4;
+    }
+}
+
+@media(max-width:569px) {
+    .wrap li {
+        width: 100%;
+        /*100%記得扣除768px以上的左右margin共4%*/
+    }
+
+    img {
+        /*文章圖片*/
+        max-width: 95%;
+        vertical-align: middle;
+    }
+
+    p {
+        color: #a92ff0;
+    }
+}
