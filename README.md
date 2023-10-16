@@ -1,2 +1,8 @@
 # school_stuff
-my first school github web
+My school stuffs
+
+## languages
+- HTML / CSS
+- Javascript
+- C
+- C++
