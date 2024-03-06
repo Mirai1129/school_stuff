@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成绩及格与平均分数</title>
+</head>
+
+<body>
+    <form action="result.php" method="POST">
+        <label for="student1">1號：</label>
+        <input type="text" name="student1" id="student1" min="0" max="100"><br>
+
+        <label for="student2">2號：</label>
+        <input type="text" name="student2" id="student2" min="0" max="100"><br>
+
+        <label for="student3">3號：</label>
+        <input type="text" name="student3" id="student3" min="0" max="100"><br>
+
+        <label for="displayOption">選擇顯示結果：</label>
+        <select name="displayOption" id="displayOption">
+            <option value="pass_status">及格狀況</option>
+            <option value="average_score">平均分數</option>
+        </select><br>
+
+        <input type="submit" value="結果">
+    </form>
+</body>
+
+</html>

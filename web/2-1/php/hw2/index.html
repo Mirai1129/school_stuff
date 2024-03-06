@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>血型調查</title>
+</head>
+
+<body>
+    <p>你的血型是？</p>
+    <form action="blood-selector.php" method="POST">
+        <input type="radio" name="blood" value="a">
+        <label for="blood-a">A型</label><br>
+
+        <input type="radio" name="blood" value="b">
+        <label for="blood-b">B型</label><br>
+
+        <input type="radio" name="blood" value="ab">
+        <label for="blood-ab">AB型</label><br>
+
+        <input type="radio" name="blood" value="o">
+        <label for="blood-o">O型</label><br>
+
+        <input type="submit" value="送出">
+        <input type="reset" value="重新設定">
+    </form>
+</body>
+
+</html>

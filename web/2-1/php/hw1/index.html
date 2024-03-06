@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人興趣調查</title>
+</head>
+
+<body>
+    <p>請勾選你的興趣: (可複選)</p>
+    <form action="interesting.php" method="POST">
+        <input type="checkbox" name="watch-movie" value="FirstOption">
+        <label for="watch-movie">看電影</label>
+
+        <input type="checkbox" name="listen-music" value="SecondOption">
+        <label for="listen-music">聽音樂</label>
+
+        <input type="checkbox" name="play-ball" value="ThirdOption">
+        <label for="play-ball">打球</label>
+
+        <input type="checkbox" name="take-photo" value="FourthOption">
+        <label for="take-photo">攝影</label>
+
+        <input type="checkbox" name="php-program" value="FifthOption">
+        <label for="php-program">寫PHP程式</label><br>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重新設定">
+    </form>
+</body>
+
+</html>
